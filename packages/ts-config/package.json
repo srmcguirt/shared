@@ -1,0 +1,31 @@
+{
+  "name": "@srmcguirt/ts-config",
+  "version": "0.0.0",
+  "description": "Shared config for TypeScript.",
+  "author": "Shane McGuirt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmcguirt/shared.git",
+    "directory": "packages/ts-config"
+  },
+  "keywords": [
+    "typescript",
+    "config"
+  ],
+  "main": "tsconfig.json",
+  "files": [
+    "base.json",
+    "lib.json",
+    "scripts/*"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "typescript": ">=4"
+  }
+}

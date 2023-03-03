@@ -1,0 +1,32 @@
+{
+  "name": "@srmcguirt/eslint-config",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.28.0",
+  "description": "Shared config for ESLint.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmcguirt/eslint-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "peerDependencies": {
+    "eslint": ">= 8"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "0.35.3",
+    "eslint": "^8.35.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

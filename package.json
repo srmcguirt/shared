@@ -1,25 +1,39 @@
 {
-  "name": "shared",
+  "name": "@srmcguirt/shared",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
+  "packageManager": "pnpm@7.28.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmcguirt/shared.git"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "packageManager": "pnpm@7.26.3"
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "commit": "git-cz",
+    "lint": "eslint .",
+    "format": "eslint . --fix",
+    "bootstrap:ci": "pnpm install --frozen-lockfile",
+    "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
+    "publish:ci": "lerna publish from-package --yes --no-verify-access",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@srmcguirt/eslint-config": "workspace:*",
+    "@types/node": "^18.14.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.35.0",
+    "husky": "^8.0.3",
+    "lerna": "^6.5.1",
+    "lint-staged": "^13.1.2",
+    "markdownlint": "^0.27.0"
+  }
 }

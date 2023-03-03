@@ -1,73 +1,103 @@
-# Turborepo starter
+<h3 align="left">Shared configs for Javascript/TypeScript Tooling</h3>
 
-This is an official pnpm starter turborepo.
+<div align="center">
 
-## What's inside?
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/srmcguirt/shared.svg)](https://github.com/srmcguirt/shared/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/srmcguirt/shared.svg)](https://github.com/srmcguirt/shared/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+</div>
 
-### Apps and Packages
+---
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 📝 Table of Contents
 
-### Utilities
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-This turborepo has some additional tools already setup for you:
+## 📖 About <a name = "about"></a>
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+TBD
 
-### Build
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-To build all apps and packages, run the following command:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-```
-cd my-turborepo
-pnpm run build
-```
+### Prerequisites
 
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+What things you need to install the software and how to install them.
 
 ```
-cd my-turborepo
-pnpm dlx turbo login
+Give examples
 ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+### Installing
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
+A step by step series of examples that tell you how to get a development env running.
+
+Say what the step will be
 
 ```
-pnpm dlx turbo link
+Give the example
 ```
 
-## Useful Links
+And repeat
 
-Learn more about the power of Turborepo:
+```
+until finished
+```
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+End with an example of getting some data out of the system or using it for a little demo.
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+Explain how to run the automated tests for this system.
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+...
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+TBD
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+TBD
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [NodeJs](https://nodejs.org/en/) - Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@srmcguirt](https://github.com/srmcguirt) - Project work
+
+See also the list of [contributors](https://github.com/srmcguirt/shared/contributors) who participated in this project.
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- References

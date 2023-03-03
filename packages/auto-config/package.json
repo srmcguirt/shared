@@ -1,0 +1,50 @@
+{
+  "name": "@srmcguirt/auto-config",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.28.0",
+  "description": "Shared config for Auto.",
+  "author": "Shane McGuirt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmcguirt/shared.git",
+    "directory": "packages/auto-config"
+  },
+  "keywords": [
+    "auto",
+    "auto-config"
+  ],
+  "main": ".autorc",
+  "files": [
+    ".autorc",
+    "scripts/*"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "auto": {
+    "plugins": [
+      [
+        "npm",
+        {
+          "forcePublish": false
+        }
+      ],
+      [
+        "conventional-commits",
+        {
+          "preset": "angular"
+        }
+      ]
+    ]
+  },
+  "peerDependencies": {
+    "auto": ">= 10"
+  },
+  "dependencies": {
+    "@auto-it/conventional-commits": "^10.43.0"
+  }
+}
