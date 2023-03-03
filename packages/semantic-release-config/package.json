@@ -1,0 +1,40 @@
+{
+  "name": "@srmcguirt/semantic-release-config",
+  "version": "0.0.0",
+  "description": "Shared config for Semantic Release.",
+  "author": "Shane McGuirt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmcguirt/shared.git",
+    "directory": "packages/semantic-release-config"
+  },
+  "keywords": [
+    "semantic-release",
+    "semantic-release-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "github-npm.js",
+    "github.js",
+    "scripts/*"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "semantic-release": ">= 19"
+  },
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.6",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3"
+  }
+}

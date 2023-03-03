@@ -1,7 +1,6 @@
 {
   "name": "@srmcguirt/eslint-config",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.28.0",
   "description": "Shared config for ESLint.",
   "license": "MIT",
   "repository": {

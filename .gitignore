@@ -1,21 +1,85 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+logs
+*.log
+
 # dependencies
 node_modules
+node_modules/
+jspm_packages/
 .pnp
 .pnp.js
 
+# Optional eslint cache
+.eslintcache
+
 # testing
 coverage
+*.lcov
+.nyc_output
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Bundle output directories
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
 
 # next.js
 .next/
 out/
 build
 
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# vuepress build output
+.vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
+
+# Gatsby files
+.cache/
+
+# Output of 'npm pack'
+*.tgz
+
 # misc
 .DS_Store
 *.pem
+.lock-wscript
+.node_repl_history
 
 # debug
 npm-debug.log*
@@ -24,6 +88,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -31,3 +96,11 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.yarn-integrity

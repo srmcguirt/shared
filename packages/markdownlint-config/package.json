@@ -1,0 +1,33 @@
+{
+  "name": "@srmcguirt/markdownlint-config",
+  "version": "0.0.0",
+  "description": "Shared config for Markdownlint.",
+  "main": "index.json",
+  "files": [
+    "index.json",
+    "scripts/*"
+  ],
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmcguirt/shared.git",
+    "directory": "packages/markdownlint-config"
+  },
+  "keywords": [
+    "markdownlint",
+    "markdownlint-config"
+  ],
+  "author": "Shane McGuirt",
+  "license": "MIT",
+  "peerDependencies": {
+    "markdownlint": ">= 0"
+  },
+  "dependencies": {
+    "markdownlint-cli": "^0.33.0"
+  }
+}

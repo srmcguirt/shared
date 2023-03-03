@@ -1,7 +1,6 @@
 {
   "name": "@srmcguirt/commitlint-config",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.28.0",
   "description": "Shared config for Commitlint.",
   "author": "Shane McGuirt",
   "license": "MIT",
