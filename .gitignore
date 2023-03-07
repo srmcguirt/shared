@@ -27,6 +27,7 @@ jspm_packages/
 coverage
 *.lcov
 .nyc_output
+html
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release

@@ -1,11 +1,7 @@
 {
   "name": "@srmcguirt/shared",
-  "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "packageManager": "pnpm@7.28.0",
+  "packageManager": "pnpm@7.29.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,8 +13,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "commit": "git-cz",
-    "lint": "eslint .",
-    "format": "eslint . --fix",
+    "lint": "eslint . --cache",
+    "format": "eslint . --cache --fix",
     "bootstrap:ci": "pnpm install --frozen-lockfile",
     "version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
     "publish:ci": "lerna publish from-package --yes --no-verify-access",
@@ -27,13 +23,14 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@srmcguirt/eslint-config": "workspace:*",
-    "@types/node": "^18.14.4",
+    "@types/node": "^18.14.6",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.35.0",
     "husky": "^8.0.3",
     "lerna": "^6.5.1",
     "lint-staged": "^13.1.2",
-    "markdownlint": "^0.27.0"
+    "markdownlint": "^0.27.0",
+    "pnpm": "^7.29.0"
   }
 }

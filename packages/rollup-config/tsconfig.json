@@ -1,0 +1,9 @@
+{
+  "extends": "@srmcguirt/ts-config/lib.json",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "incremental": false,
+    "moduleResolution": "node",
+    "outDir": "dist",
+  }
+}

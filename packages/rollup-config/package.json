@@ -1,0 +1,77 @@
+{
+  "name": "@srmcguirt/rollup-config",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Shared config for Rollup.",
+  "author": "Shane McGuirt",
+  "license": "MIT",
+  "repository": {
+    "url": "srmcguirt/shared",
+    "directory": "packages/rollup-config"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "scripts/*"
+  ],
+  "scripts": {
+    "clean": "pnpx rimraf html",
+    "compile": "tsup",
+    "dev": "tsup -w",
+    "build": "pnpm clean && pnpm compile",
+    "prerelease": "pnpm build",
+    "postpublish": "pnpm up @srmcguirt/rollup-config -r",
+    "test": "vitest",
+    "types": "tsup --dts-only"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@rollup/plugin-alias": "latest",
+    "@rollup/plugin-auto-install": "latest",
+    "@rollup/plugin-commonjs": "latest",
+    "@rollup/plugin-eslint": "latest",
+    "@rollup/plugin-html": "latest",
+    "@rollup/plugin-json": "latest",
+    "@rollup/plugin-multi-entry": "latest",
+    "@rollup/plugin-node-resolve": "latest",
+    "@rollup/plugin-replace": "latest",
+    "@rollup/plugin-terser": "latest",
+    "@rollup/plugin-typescript": "latest",
+    "destr": "^1.2.2",
+    "rollup-plugin-copy": "latest",
+    "rollup-plugin-delete": "latest",
+    "rollup-plugin-dts": "latest",
+    "rollup-plugin-esbuild": "latest",
+    "rollup-plugin-filesize": "latest",
+    "rollup-plugin-node-polyfills": "latest",
+    "rollup-plugin-peer-deps-external": "latest",
+    "rollup-plugin-postcss": "latest"
+  },
+  "optionalDependencies": {
+    "esbuild": "^0.17.11",
+    "rollup": "^3.18.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@srmcguirt/ts-config": "workspace:*",
+    "@types/node": "latest",
+    "@vitest/coverage-c8": "^0.29.2",
+    "@vitest/ui": "^0.29.2",
+    "tsup": "^6.6.3",
+    "vite": "^4.1.4",
+    "vitest": "^0.29.2"
+  }
+}

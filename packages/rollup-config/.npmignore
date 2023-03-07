@@ -1,0 +1,10 @@
+# FILES
+*.ts
+tsconfig.json
+readme.md
+changelog.md
+vitest.config.ts
+
+# DIRECTORIES
+node_modules
+html
