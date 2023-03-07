@@ -1,6 +1,6 @@
 {
   "name": "@srmcguirt/markdownlint-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared config for Markdownlint.",
   "author": "Shane McGuirt",
   "license": "MIT",

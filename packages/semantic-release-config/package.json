@@ -1,6 +1,6 @@
 {
   "name": "@srmcguirt/semantic-release-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared config for Semantic Release.",
   "author": "Shane McGuirt",
   "license": "MIT",

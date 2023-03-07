@@ -1,7 +1,7 @@
 {
   "name": "@srmcguirt/rollup-config",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shared config for Rollup.",
   "author": "Shane McGuirt",
   "license": "MIT",

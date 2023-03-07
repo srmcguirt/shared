@@ -1,6 +1,6 @@
 {
   "name": "@srmcguirt/eslint-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared config for ESLint.",
   "license": "MIT",
   "repository": {
@@ -20,8 +20,8 @@
   },
   "dependencies": {
     "@antfu/eslint-config": "0.36.0",
-    "eslint-plugin-turbo": "^0.0.9",
-    "eslint": "^8.35.0"
+    "eslint": "^8.35.0",
+    "eslint-plugin-turbo": "^0.0.9"
   },
   "devDependencies": {
     "typescript": "^4.9.5"
