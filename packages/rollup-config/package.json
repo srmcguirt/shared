@@ -68,7 +68,7 @@
   "devDependencies": {
     "@srmcguirt/ts-config": "workspace:*",
     "@types/node": "latest",
-    "@vitest/coverage-c8": "^0.29.2",
+    "@vitest/coverage-c8": "^0.31.3",
     "@vitest/ui": "^0.29.2",
     "tsup": "^6.6.3",
     "vite": "^4.1.4",
