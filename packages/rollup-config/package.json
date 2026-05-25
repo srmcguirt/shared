@@ -63,7 +63,7 @@
   "optionalDependencies": {
     "esbuild": "^0.17.11",
     "rollup": "^3.18.0",
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.4"
   },
   "devDependencies": {
     "@srmcguirt/ts-config": "workspace:*",
